@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connie Chang</title>
+    <style>
+        @font-face {
+            font-family: 'Courier Prime Sans';
+            src: url('Courier-Prime-Sans.woff') format('woff'); /* Replace with your actual path */
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Courier Prime Sans', Courier, monospace;
+            line-height: 130%;
+            background-color: #f9f0ec; 
+            color: #000;
+            margin: 30px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px; 
+        }
+
+        .column {
+            text-align: left;
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+        }
+
+        .button {
+            display: inline-block;
+            padding: 6px 8px 4px 8px;
+            border: 1px solid rgb(173, 173, 173);
+            border-radius: 12px; 
+            text-decoration: none;
+            color: inherit;
+            margin: 0 0 10px 0;
+            width: 100%; /* Make button take full column width */
+        }
+
+        .button:hover {
+            color: inherit;
+            background-color: #f0f0f0;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color:rgb(173, 173, 173);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        img {
+            max-width: 100%; /* Image fits within column */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 14px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            Connie Chang
+        </div>
+        <div class="column">
+            Graphic Design<br>
+            San Francisco
+        </div>
+        <div class="column">
+            Contact<br>
+            <a href="mailto:mail@conniechang.net">mail@conniechang.net</a>
+        </div>
+        <div class="column">
+            <img src="image.jpg" alt="Description of image"> 
+        </div>
+    </div>
+</body>
+</html>
